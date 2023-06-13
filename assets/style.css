@@ -115,7 +115,7 @@ body {
 
 .page-header_title {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 30px;
     color: #000000;
     font-size: 24px;
     display: block;
@@ -429,11 +429,15 @@ body {
 }
 
 .section-footer_block {
-    list-style-type: none;
+   
     text-decoration: none;
     margin: 0;
     padding: 0;
 
+}
+.footer-menu_block_link{
+    list-style-type: none;
+    padding:0;
 }
 
 .section-footer_title {
@@ -590,6 +594,9 @@ body {
 }
 
 @media all and (min-width: 1100px) {
+    .page-navigation{
+        height: 96px;
+    }
 
     .fonctionnement {
 
@@ -639,30 +646,6 @@ body {
     }
 }
 
-
-
-
-
-/* A SUPPRIMER 
-@media all and (max-width: 900px) {
-    .fonctionnement-button_icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media all and (max-width: 350px) {
-    .fonctionnement {
-        width: 100%;
-    }
-
-
-    .fonctionnement-icon_number {
-        border: 0px;
-    }
-}
-FIN A SUPPRIMER */
 
 
 /*pages de menu */
