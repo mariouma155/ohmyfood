@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+
+
+/* Page d'acceuil*/
+
+
+body {
+
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+/*--Loader--*/
+
+.section-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #16a085;
+    overflow: hidden;
+    animation: hideLoader 1s 1s linear forwards;
+
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.loader-quart {
+    border-radius: 50px;
+    border: 6px solid rgba(250, 250, 250, 0.4);
+}
+
+.loader-quart:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFFFFF;
+    animation: loader-shadow 2s linear forwards;
+
+}
+
+.loader-chargement {
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+/* fin loader*/
+
+
+.page-navigation {
+    width: 100%;
+    height: 63px;
+    text-align: center;
+    background: #FFFFFF;
+    font-family: 'Shrikhand', cursive;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-navigation_title {
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+/* footer*/
+
+.section-footer {
+    background: #353535;
+    color: #FFFFFF;
+    height: auto;
+
+}
+
+.section-footer .container {
+    width:100%;
+    margin:0 auto;
+    max-width: 1440px;
+}
+.section-footer_liste {
+    padding: 22px 25px;
+    font-weight: 400;
+}
+
+.section-footer_logo {
+    margin: 0;
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom:16px;
+}
+
+.section-footer_block {
+   
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+.footer-menu_block_link{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.section-footer_title {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.section-footer_title:hover {
+    text-decoration: underline;
+}
+
+.section-footer_link {
+
+    padding-top: 7px;
+}
+
+.section-footer_icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.section-footer_icon:hover {
+    text-decoration: underline;
+}
+
+.footer_icon {
+    margin-right: 11px;
+    font-size: 13px;
+    width: 11px;
+}
+
+/*fin  footer*/
+
+
+.section-heart {
+    position: absolute;
+    font-size: 22px;
+}
+
+.section-restaurants_heart {
+    width: 22px;
+    height: 22px;
+    color: #101010;
+    margin-right: 25px;
+    cursor: pointer;
+
+
+}
+
+.section-restaurants_heart_solid {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+
+}
+
+.section-restaurants_heart_solid:hover {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(0deg,
+            rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    overflow: hidden;
+}

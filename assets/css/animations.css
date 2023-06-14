@@ -1,0 +1,100 @@
+
+
+
+/* annimation icon cerle*/
+
+@keyframes spin-cercle {
+    0% {
+        transform:rotate(0deg) ;
+        -webkit-transform:rotate(0deg) ;
+
+    }
+
+    100% {
+        transform: rotate(100deg);
+        -webkit-transform: rotate(100deg);
+    }
+}
+
+/* annimation loader*/
+@keyframes hideLoader {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@keyframes loader-shadow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+
+/* annimation menu */
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes menuaside {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* annimation cards */
+@keyframes slideinohmyfood {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes titlheart {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
